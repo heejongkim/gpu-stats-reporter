@@ -13,12 +13,15 @@ Each GPU on the machine is reported separately, though not all GPUs support repo
 
 ## Install
 
-* Download and install the latest [NodeJS]
+* yum install nodejs -y   # Download and install the latest [NodeJS]
 * Install the [DataDog] agent
 * Clone the repo
-* Follow the [Node Gyp setup guide]
+* yum update openssl -y
+* npm rebuild
+* npm install -g node-gyp  #Follow the [Node Gyp setup guide]
 * Ensure `nvidia-smi`, usually located under `C:\Program Files\NVIDIA Corporation\NVSMI`, is available in your `PATH`
 * Run `npm install` from the repo base directory
+* screen
 * Run `npm run dev`
 
 ## Usage
